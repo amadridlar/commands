@@ -2,4 +2,4 @@
 
 - Main Git commands
 - Main Docker commands
-- Main Terminator commands
+- Main Terminator shortcuts

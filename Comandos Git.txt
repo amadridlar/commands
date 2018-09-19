@@ -1,0 +1,105 @@
+    • Configurar usuario e email
+$ git config –-global user.name “nombre”
+	$ git config –-global user.email email@gm.com
+    • Ver manual de usuario de un comando
+	$ git help palabra_comando
+    • Convertir directorio en repositorio
+situarse en directorio → $ git init
+    • Incluir archivos para seguimiento
+$ git add carpeta
+$ git add archivo.extension
+$ gir add . → añade todos los archivos del directorio
+    • Comprobar estado archivos
+$ git status
+    • Comprobar modificaciones. Indica cuáles han sido exactamente los cambios en cada archivo
+$ git diff
+    · muestra los cambios desde el último commit
+$ git diff –-cached
+$ git diff –-staged
+    • Eliminar archivos
+$ git rm archivos
+    • Eliminar archivo de los archivos en seguimiento pero conservarlo en disco
+$ git rm –-cached archivo 
+$ git rm --cached \*.log → elimina todos los archivos .log
+    • Deshacer preparación de un archivo 
+$ git reset HEAD archivo
+$ git reset HEAD → deshace todos los archivos
+
+--------------------
+COMMIT
+--------------------
+
+    • Confirmar archivos (commit de los archivos en seguimiento)
+$ git commit
+$ git commit -m “añade comentario”
+    • Commit de todos los archivos que ya estaban en seguimiento, aunque desde la última modificación no se haya hecho add
+$ git commit -a
+    • Deshacer commit - hacer un nuevo commit sobreescribiendo el anterior. Añadimos para seguimiento los archivos que queramos añadir al último commit, y al ejecutar el comando estos se añaden al commit
+$ git commit --amend
+    • Volver un archivo a su estado en el último commit (modifica el archivo en el disco también)
+$ git checkout --archivo
+	· Volver a un commit anterior de esa rama
+$ git reset --hard <hash commit>
+
+-------------------------
+RAMAS
+------------------------
+    • Crear una rama
+$ git branch nombre_rama
+    • Consultar cuántas ramas hay
+$ git branch
+    • Cambiar a otra rama
+$ git checkout rama
+    • Hacer un merge de una rama a la rama en la que estoy
+$ git merge rama
+    • Eliminar una rama
+$ git branch -d nombre_rama
+
+	· Guardar cambios sin añadir a seguimiento. Se guardan los cambios para poder cambiar de rama, etc.
+$ git stash
+	· Listar cambios guardados en stash
+$ git stash list
+	· Recuperar cambios guardados
+$ git stash apply
+	· Renombrar rama
+$ git branch -m nombre-rama nombre-rama-nueva
+
+
+---------------------------
+REPOSITORIOS
+--------------------------
+
+    • Añadir repositorio remoto
+$ git remote add nombreRepositorio URLRepositorio
+    •    Consultar repositorios añadidos
+$ git remote
+    • Añadir rama a repositorio remoto
+$ git push -u nombreRepositorio nombreRama (el comando -u recuerda los parámetros, por lo que el próximo push de la misma rama se hará con $ git push)
+    • Descargar commit del repositorio remoto y añadirlo a rama
+$ git pull nombreRepositorio nombreRama
+
+-------------------------
+ETIQUETAS
+-------------------------
+
+    • Listar etiquetas
+$ git tag
+    • Buscar etiquetas por rango
+$ git tag -l 'v1.4.2.*'
+    • Crear etiquetas anotadas
+git tag -a v1.4 -m 'my version 1.4'
+
+    • Listar información etiqueta anotadas
+      
+        git show v1.4
+
+    • Crear etiqueta ligera
+
+       git tag v1.4-lw
+      
+    • Etiquetar una confirmación (commit) anterior
+
+git tag -a v1.2 -m 'version 1.2' 9fceb02
+
+    • Enviar etiqueta al repositorio remoto (un commit etiquetado no se envía como tal al repositorio remoto)
+    • git push origin [tagname]

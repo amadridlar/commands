@@ -1,0 +1,54 @@
+Ctrl+Shift+O
+Dividir terminales horizontalmente
+Ctrl+Shift+E
+Dividir terminales verticalmente
+Ctrl+Shift+Right
+Mover dragbar principal a la Derecha
+Ctrl+Shift+Left
+Mover dragbar principal a la Izquierda
+Ctrl+Shift+Up
+Mover dragbar principal arriba
+Ctrl+Shift+Down
+Mover dragbar principal abajo
+Ctrl+Shift+S
+Mostrar/Ocultar barra Scroll
+Ctrl+Shift+F
+Buscar con el scrollback de la terminal
+Ctrl+Shift+N or Ctrl+Tab
+Mover a la siguiente terminal dentro de la misma tab,usando Ctrl+PageDown moveremos a la siguiente tab. Si cycle_term_tab es False, no funcionará
+Ctrl+Shift+P or Ctrl+Shift+Tab
+Mover a la anterior terminal dentro de la misma tab,usando Ctrl+PageDown moveremos a la anterior tab. Si cycle_term_tab es False, no funcionará
+Ctrl+Shift+C
+Copiar lo seleccionado al portapapeles
+Ctrl+Shift+V
+Pegar texto del portapapeles
+Ctrl+Shift+W
+Cerrar la terminal actual
+Ctrl+Shift+Q
+Quitar Terminator
+Ctrl+Shift+X
+Mostrar solamente la terminal actual
+Ctrl+Shift+Z
+Ampliar la terminal actual
+Ctrl+Shift+T
+Abrir nueva tab.
+Ctrl+Shift+Alt+T
+Abrir nueva tab en nivel root, (si usamos extreme_tabs)
+Ctrl+PageDown
+Mover a la siguiente Tab
+Ctrl+PageUp
+Mover a la anterior Tab
+Ctrl+Shift+PageDown
+Intercambiar posición con la siguiente Tab
+Ctrl+Shift+PageUp
+Intercambiar posición con la anterior Tab
+Ctrl+Shift+F
+Open buffer search bar to find substrings in the scrollback buffer. Hit Escape to cancel.
+Ctrl+Plus (+)
+Aumentar tamaño de la fuente
+Ctrl+Minus (-)
+Disminuirtamaño de la fuente
+Ctrl+Zero (0)
+Restaurar tamaño original de la fuente
+F11
+Tab a pantalla completa
